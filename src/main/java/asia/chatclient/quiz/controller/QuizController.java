@@ -47,7 +47,7 @@ public class QuizController {
     private QuestionRepository questionRepository;
 
     private boolean isQuizEnabled() {
-        String flag = redisTemplate.opsForValue().get("quiz_menzhen:enabled");
+        String flag = redisTemplate.opsForValue().get("quiz_online:enabled");
         return "true".equalsIgnoreCase(flag);
     }
 
