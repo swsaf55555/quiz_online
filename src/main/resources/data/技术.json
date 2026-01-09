@@ -1,0 +1,244 @@
+{
+  "技术题": [
+    {
+      "id": 1,
+      "question": "在C语言中，`printf(\"%d\", 3.14);` 的输出结果是？",
+      "options": [
+        "A. 3.14",
+        "B. 3",
+        "C. 编译错误",
+        "D. 随机值"
+      ],
+      "correct": "B",
+      "explanation": "3.14是double类型，使用`%d`会被强制转换为int类型，输出结果为3。"
+    },
+    {
+      "id": 2,
+      "question": "以下Python代码 `print([i*i for i in range(3)])` 的输出是？",
+      "options": [
+        "A. [1, 4, 9]",
+        "B. [0, 1, 4]",
+        "C. (0, 1, 4)",
+        "D. 错误"
+      ],
+      "correct": "B",
+      "explanation": "range(3)生成[0,1,2]，平方后结果为[0,1,4]。"
+    },
+    {
+      "id": 3,
+      "question": "在单片机中，GPIO口配置为输出时，其功能是？",
+      "options": [
+        "A. 接收外部信号",
+        "B. 向外输出高低电平",
+        "C. 用于中断触发",
+        "D. 只能接收模拟信号"
+      ],
+      "correct": "B",
+      "explanation": "GPIO作为输出时用于给外设提供高低电平信号。"
+    },
+    {
+      "id": 4,
+      "question": "在C语言中，指针`p`加1后，地址的变化取决于？",
+      "options": [
+        "A. 总是+1字节",
+        "B. 所指向数据类型的大小",
+        "C. CPU位数",
+        "D. 内存大小"
+      ],
+      "correct": "B",
+      "explanation": "指针加1会跳过所指向类型的大小，比如int指针加1在32位系统中加4字节。"
+    },
+    {
+      "id": 5,
+      "question": "Python中 `len({1,2,2,3})` 的结果是？",
+      "options": [
+        "A. 4",
+        "B. 3",
+        "C. 2",
+        "D. 报错"
+      ],
+      "correct": "B",
+      "explanation": "集合set会去重，最终元素为{1,2,3}，长度为3。"
+    },
+    {
+      "id": 6,
+      "question": "在单片机中，中断的作用是？",
+      "options": [
+        "A. 减少功耗",
+        "B. 自动存储程序数据",
+        "C. 在特定事件发生时打断CPU当前任务去处理事件",
+        "D. 提高系统时钟频率"
+      ],
+      "correct": "C",
+      "explanation": "中断机制可以在外部或内部事件发生时立即处理，提高实时性。"
+    },
+    {
+      "id": 7,
+      "question": "在C语言中，`char *s = \"hello\"; s[0] = 'H';` 会导致什么情况？",
+      "options": [
+        "A. 输出Hello",
+        "B. 编译错误",
+        "C. 运行时错误（段错误）",
+        "D. 正常运行"
+      ],
+      "correct": "C",
+      "explanation": "字符串常量存储在只读区，修改会导致段错误。"
+    },
+    {
+      "id": 8,
+      "question": "Python中 `a = [1,2,3]; b = a; b[0] = 9; print(a)` 的结果是？",
+      "options": [
+        "A. [1,2,3]",
+        "B. [9,2,3]",
+        "C. 报错",
+        "D. None"
+      ],
+      "correct": "B",
+      "explanation": "b和a引用同一列表，修改b也会影响a。"
+    },
+    {
+      "id": 9,
+      "question": "在单片机定时器应用中，主要作用是？",
+      "options": [
+        "A. 提供延时、计数和定时中断",
+        "B. 提高电源电压",
+        "C. 增强存储容量",
+        "D. 扩展显示功能"
+      ],
+      "correct": "A",
+      "explanation": "定时器常用于延时、计数以及定时中断功能。"
+    },
+    {
+      "id": 10,
+      "question": "以下哪一项是C语言中的存储类说明符？",
+      "options": [
+        "A. static",
+        "B. private",
+        "C. public",
+        "D. class"
+      ],
+      "correct": "A",
+      "explanation": "C语言存储类说明符包括auto、register、static、extern。"
+    },
+    {
+      "id": 11,
+      "question": "Python中 `for i in range(5): pass` 执行次数是？",
+      "options": [
+        "A. 4",
+        "B. 5",
+        "C. 6",
+        "D. 无限"
+      ],
+      "correct": "B",
+      "explanation": "range(5)生成0,1,2,3,4，总共5次循环。"
+    },
+    {
+      "id": 12,
+      "question": "在单片机系统中，EEPROM的主要作用是？",
+      "options": [
+        "A. 存储程序代码",
+        "B. 存储掉电后仍需保存的数据",
+        "C. 提供高速缓存",
+        "D. 作为定时器使用"
+      ],
+      "correct": "B",
+      "explanation": "EEPROM掉电后数据不丢失，常用于存储配置参数。"
+    },
+    {
+      "id": 13,
+      "question": "在C语言中，`sizeof('A')` 的结果是？",
+      "options": [
+        "A. 1",
+        "B. 2",
+        "C. 4",
+        "D. 取决于编译器"
+      ],
+      "correct": "C",
+      "explanation": "'A'是字符常量，实际类型是int，通常占4字节。"
+    },
+    {
+      "id": 14,
+      "question": "Python中 `dict` 的键（key）必须是？",
+      "options": [
+        "A. 可变对象",
+        "B. 不可变对象",
+        "C. 列表",
+        "D. 任意对象"
+      ],
+      "correct": "B",
+      "explanation": "字典的键必须是不可变对象，如字符串、数字、元组。"
+    },
+    {
+      "id": 15,
+      "question": "在单片机中，PWM信号常用于？",
+      "options": [
+        "A. 驱动电机调速、调光",
+        "B. 提高内存速度",
+        "C. 数据压缩",
+        "D. 中断处理"
+      ],
+      "correct": "A",
+      "explanation": "PWM广泛用于电机调速和LED亮度控制。"
+    },
+    {
+      "id": 16,
+      "question": "C语言中，函数递归调用时，参数和返回地址存储在？",
+      "options": [
+        "A. 寄存器",
+        "B. 堆区",
+        "C. 栈区",
+        "D. 全局数据区"
+      ],
+      "correct": "C",
+      "explanation": "递归调用需要保存参数和返回地址，存储在栈区。"
+    },
+    {
+      "id": 17,
+      "question": "Python中，`[1,2]*2` 的结果是？",
+      "options": [
+        "A. [2,4]",
+        "B. [1,2,1,2]",
+        "C. 报错",
+        "D. [1,1,2,2]"
+      ],
+      "correct": "B",
+      "explanation": "列表乘法会重复拼接，结果是[1,2,1,2]。"
+    },
+    {
+      "id": 18,
+      "question": "在单片机串口通信中，波特率的含义是？",
+      "options": [
+        "A. 每秒钟传输的字节数",
+        "B. 每秒钟传输的比特数",
+        "C. CPU主频",
+        "D. 内存读写速度"
+      ],
+      "correct": "B",
+      "explanation": "波特率指每秒传输的比特数。"
+    },
+    {
+      "id": 19,
+      "question": "在C语言中，`int a[5];` 正确的下标范围是？",
+      "options": [
+        "A. 1~5",
+        "B. 0~4",
+        "C. -1~4",
+        "D. 任意整数"
+      ],
+      "correct": "B",
+      "explanation": "数组下标从0开始，到n-1结束。"
+    },
+    {
+      "id": 20,
+      "question": "Python中，`import this` 的输出包含什么？",
+      "options": [
+        "A. Python编译器版本",
+        "B. Python之禅",
+        "C. 当前路径",
+        "D. 内置模块列表"
+      ],
+      "correct": "B",
+      "explanation": "执行 `import this` 会打印 Python之禅，一组编程哲学格言。"
+    }
+  ]
+}

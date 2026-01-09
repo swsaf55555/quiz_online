@@ -1,0 +1,724 @@
+{
+  "维修题": [
+    {
+      "id": 1,
+      "question": "请选择一个与众不同的句子",
+      "options": [
+        "A. 海内存知己，天涯若比邻",
+        "B. 嗨，别来无恙啊！",
+        "C. 兵来将挡，水来土掩",
+        "D. 飞流直下三千尺，疑是银河落九天"
+      ],
+      "correct": "D",
+      "explanation": "D不是Windows的oobe里的语句"
+    },
+    {
+      "id": 2,
+      "question": "Windows系统启动缓慢，以下哪项最常见？",
+      "options": [
+        "A. 将系统装在了机械硬盘",
+        "B. 网速太慢",
+        "C. 显卡性能不足",
+        "D. 屏幕分辨率太高"
+      ],
+      "correct": "A",
+      "explanation": "机械硬盘4K读写性能很弱，会严重拖慢软件运行速度"
+    },
+    {
+      "id": 3,
+      "question": "十几年前的老电脑卡顿，最性价比的做法是更换什么？",
+      "options": [
+        "A. 固态硬盘",
+        "B. 电源",
+        "C. CPU",
+        "D. 显卡"
+      ],
+      "correct": "A",
+      "explanation": "机械硬盘4K读写性能很弱，会严重拖慢软件运行速度，更换固态硬盘大幅提升性能"
+    },
+    {
+      "id": 4,
+      "question": "在哪里可以快速检查某个硬件是否正常工作",
+      "options": [
+        "A. 设备管理器",
+        "B. 系统设置",
+        "C. 关于本机",
+        "D. 360安全卫士"
+      ],
+      "correct": "A",
+      "explanation": "无"
+    },
+    {
+      "id": 5,
+      "question": "Windows系统经常提示“内存不足”，下列最有效的解决办法是？",
+      "options": [
+        "A. 使用2345加速球",
+        "B. 增加物理内存",
+        "C. 使用360加速球",
+        "D. 重启路由器"
+      ],
+      "correct": "B",
+      "explanation": "增加虚拟内存或物理内存可以缓解内存不足的问题。"
+    },
+    {
+      "id": 6,
+      "question": "Windows因驱动错误无法进入系统，最应优先考虑的修复方式是？",
+      "options": [
+        "A. 重买硬件",
+        "B. 进入安全模式",
+        "C. 重装系统",
+        "D. 给驱动作者差评"
+      ],
+      "correct": "B",
+      "explanation": "可通过安全模式卸载错误驱动恢复正常启动。"
+    },
+    {
+      "id": 7,
+      "question": "以下哪个不是iPhone进入恢复模式的方法？",
+      "options": [
+        "A. 短按音量上-下-长按电源键",
+        "B. 同时长按音量下和电源键",
+        "C. 同时按住电源和home，亮屏后松开电源",
+        "D. 同时长按音量上和电源键"
+      ],
+      "correct": "D",
+      "explanation": "无"
+    },
+    {
+      "id": 8,
+      "question": "Windows10/11中如何查看启动项？",
+      "options": [
+        "A. 任务管理器-启动",
+        "B. 控制面板-电源",
+        "C. 设备管理器-磁盘",
+        "D. BIOS设置"
+      ],
+      "correct": "A",
+      "explanation": "Windows10/11在任务管理器的“启动”选项卡中可管理启动项。"
+    },
+    {
+      "id": 9,
+      "question": "U盘假扩容盘是如何实现虚假高容量的？",
+      "options": [
+        "A. 修改主控固件信息",
+        "B. 焊接大容量闪存",
+        "C. 给系统植入木马",
+        "D. autorun技术"
+      ],
+      "correct": "A",
+      "explanation": "无"
+    },
+    {
+      "id": 10,
+      "question": "以下哪个手机截止到2025年9月仍可轻易解锁bootloader？",
+      "options": [
+        "A. 一加11",
+        "B. 小米14",
+        "C. VIVO X100",
+        "D. OPPO Find X8"
+      ],
+      "correct": "A",
+      "explanation": "无"
+    },
+    {
+      "id": 11,
+      "question": "以下哪个软件可以用来管理分区？",
+      "options": [
+        "A. wsl",
+        "B. taskmgr",
+        "C. diskgenius",
+        "D. microsoft edge"
+      ],
+      "correct": "C",
+      "explanation": "无"
+    },
+    {
+      "id": 12,
+      "question": "Windows注册表编辑工具的命令是？",
+      "options": [
+        "A. regedit",
+        "B. cmd",
+        "C. control",
+        "D. explorer"
+      ],
+      "correct": "A",
+      "explanation": "regedit用于编辑Windows注册表。"
+    },
+    {
+      "id": 13,
+      "question": "以下哪个不是root授权管理软件？",
+      "options": [
+        "A. Magisk",
+        "B. SuperSU",
+        "C. Xposed",
+        "D. KernelSU"
+      ],
+      "correct": "C",
+      "explanation": "无"
+    },
+    {
+      "id": 14,
+      "question": "Win+R输入什么可快速打开注册表？",
+      "options": [
+        "A. msconfig",
+        "B. config",
+        "C. system",
+        "D. regedit"
+      ],
+      "correct": "D",
+      "explanation": "无"
+    },
+    {
+      "id": 15,
+      "question": "打开Windows临时文件夹的命令是？",
+      "options": [
+        "A. %temp%",
+        "B. %user%",
+        "C. tmpclean",
+        "D. temp files"
+      ],
+      "correct": "A",
+      "explanation": "在运行输入%temp%即可快速打开临时文件夹进行清理。"
+    },
+    {
+      "id": 16,
+      "question": "近几年的Android手机刷非官方系统前必须先？",
+      "options": [
+        "A. 解锁Bootloader",
+        "B. 越狱",
+        "C. Root",
+        "D. 安装cydia"
+      ],
+      "correct": "A",
+      "explanation": "刷机前需保证电量充足并解锁Bootloader，否则无法刷入第三方ROM。"
+    },
+    {
+      "id": 17,
+      "question": "截止到2025年9月，以下哪个系统版本可以使用巨魔？",
+      "options": [
+        "A. iOS 18.7",
+        "B. iOS 17.7",
+        "C. iOS 26.0",
+        "D. iOS 16.6"
+      ],
+      "correct": "D",
+      "explanation": "无"
+    },
+    {
+      "id": 18,
+      "question": "以下哪个是比较知名的第三方Recovery？",
+      "options": [
+        "A. TWRP",
+        "B. Photoshop",
+        "C. Office",
+        "D. WinRAR"
+      ],
+      "correct": "A",
+      "explanation": "TWRP是最常用的第三方Recovery工具。"
+    },
+    {
+      "id": 19,
+      "question": "以下哪几家手机品牌可以利用互传来迁移APP数据？",
+      "options": [
+        "A. 小米、荣耀、华为",
+        "B. 小米、OPPO、苹果",
+        "C. 荣耀、华为、三星",
+        "D. OPPO、VIVO、三星"
+      ],
+      "correct": "D",
+      "explanation": "无"
+    },
+    {
+      "id": 20,
+      "question": "iPhone有锁机的一般指的意思是？",
+      "options": [
+        "A. 有密码锁",
+        "B. 有ID锁",
+        "C. 有运营商锁",
+        "D. 有监管锁"
+      ],
+      "correct": "C",
+      "explanation": "无"
+    },
+    {
+      "id": 21,
+      "question": "某台全新未激活iPhone在拆封后立马更换电池和屏幕，然后连接爱思助手会如何提示",
+      "options": [
+        "A. 爱思助手会全绿",
+        "B. 爱思助手会提示电池更换",
+        "C. 爱思助手会提示屏幕更换",
+        "D. 爱思助手会提示电池和屏幕更换"
+      ],
+      "correct": "A",
+      "explanation": "爱思只记录第一次数据"
+    },
+    {
+      "id": 22,
+      "question": "Windows下如何查看系统版本？",
+      "options": [
+        "A. winver",
+        "B. sysinfo",
+        "C. oscheck",
+        "D. version"
+      ],
+      "correct": "A",
+      "explanation": "Win+R输入winver即可查看系统版本信息。"
+    },
+    {
+      "id": 23,
+      "question": "Windows无法识别新买的硬盘，常见的原因是？",
+      "options": [
+        "A. 未初始化磁盘（未格式化）",
+        "B. 磁盘文件系统不支持",
+        "C. 硬盘损坏",
+        "D. USB接口老化"
+      ],
+      "correct": "A",
+      "explanation": "新硬盘需在磁盘管理中初始化并分配盘符才能使用。"
+    },
+    {
+      "id": 24,
+      "question": "常用的Windows快捷键：最快速启动任务管理器的是？",
+      "options": [
+        "A. Ctrl+Shift+Esc",
+        "B. Ctrl+Alt+Del",
+        "C. Win+Tab",
+        "D. Win+D"
+      ],
+      "correct": "A",
+      "explanation": "Ctrl+Shift+Esc可直接打开任务管理器，比Ctrl+Alt+Del更快。"
+    },
+    {
+      "id": 25,
+      "question": "以下那个软件可以用来备份驱动",
+      "options": [
+        "A. CH340 Driver",
+        "B. dism++",
+        "C. 7zip",
+        "D. chrome"
+      ],
+      "correct": "B",
+      "explanation": "无"
+    },
+    {
+      "id": 26,
+      "question": "Windows无法删除文件，提示“文件被占用”应怎么办？",
+      "options": [
+        "A. 多试几次",
+        "B. 这是Bug",
+        "C. 关闭占用进程",
+        "D. 查杀电脑病毒"
+      ],
+      "correct": "C",
+      "explanation": "无"
+    },
+    {
+      "id": 27,
+      "question": "OLED和LCD的区别是？",
+      "options": [
+        "A. LCD每个像素点自发光",
+        "B. OLED通常更厚",
+        "C. OLED每个像素点自发光",
+        "D. LCD多使用pwm调光"
+      ],
+      "correct": "C",
+      "explanation": "无"
+    },
+    {
+      "id": 28,
+      "question": "UAC是什么？",
+      "options": [
+        "A. 拦截广告弹窗",
+        "B. 用户账户控制",
+        "C. 定时关机服务",
+        "D. 系统更新服务"
+      ],
+      "correct": "B",
+      "explanation": "无"
+    },
+    {
+      "id": 29,
+      "question": "在Windows下常用的网络抓包工具是？",
+      "options": [
+        "A. Chrome",
+        "B. Excel",
+        "C. PowerPoint",
+        "D. Wireshark"
+      ],
+      "correct": "D",
+      "explanation": "Wireshark是常见的网络抓包分析工具。"
+    },
+    {
+      "id": 30,
+      "question": "关于iPhone刷机，哪些是正确的？",
+      "options": [
+        "A. 刷机前需解锁bootloader",
+        "B. 无法降级到已关闭验证的版本",
+        "C. 刷机前需使用chekra1n越狱",
+        "D. 可以降级到任意版本"
+      ],
+      "correct": "B",
+      "explanation": "无"
+    },
+    {
+      "id": 31,
+      "question": "Windows出现“无法定位程序输入点”错误，最常见原因是？",
+      "options": [
+        "A. 动态链接库文件缺失或版本不匹配",
+        "B. 键盘输入有问题",
+        "C. 北斗定位信号不好",
+        "D. 定位系统损坏"
+      ],
+      "correct": "A",
+      "explanation": "缺少或版本不匹配的DLL文件会导致“无法定位程序输入点”错误。"
+    },
+    {
+      "id": 32,
+      "question": "系统提示“BOOTMGR is missing”，最常见修复方法是？",
+      "options": [
+        "A. 检查内存",
+        "B. 鼠标接口松了",
+        "C. 修复引导",
+        "D. 内存条松了"
+      ],
+      "correct": "C",
+      "explanation": "无"
+    },
+    {
+      "id": 33,
+      "question": "Windows磁盘使用率100%，常见原因是？",
+      "options": [
+        "A. CPU降频",
+        "B. 屏幕亮度高",
+        "C. USB接口老化",
+        "D. 程序IO占用过高"
+      ],
+      "correct": "D",
+      "explanation": "后台进程或系统服务占用过多会导致磁盘使用率100%。"
+    },
+    {
+      "id": 34,
+      "question": "Windows“任务栏无响应”常见的快速修复方法是？",
+      "options": [
+        "A. 换显卡驱动",
+        "B. 重启explorer.exe进程",
+        "C. 重插内存条",
+        "D. 格式化硬盘"
+      ],
+      "correct": "B",
+      "explanation": "重启资源管理器进程可以快速恢复任务栏响应。"
+    },
+    {
+      "id": 35,
+      "question": "笔记本拆开后盖以后首先应该干什么？",
+      "options": [
+        "A. 断电",
+        "B. 检查主板外观",
+        "C. 检查电池是否鼓包",
+        "D. 检查是否关机"
+      ],
+      "correct": "A",
+      "explanation": "无"
+    },
+    {
+      "id": 36,
+      "question": "Windows默认的软件安装目录是",
+      "options": [
+        "A. Documents",
+        "B. Users",
+        "C. Program Files",
+        "D. Windows"
+      ],
+      "correct": "C",
+      "explanation": "无"
+    },
+    {
+      "id": 37,
+      "question": "笔记本触控板失灵常见原因是？",
+      "options": [
+        "A. USB接口坏了",
+        "B. 电池电量过低",
+        "C. 显示器亮度不足",
+        "D. 驱动程序未安装或被禁用"
+      ],
+      "correct": "D",
+      "explanation": "触控板失灵多因驱动缺失或在BIOS/系统中被禁用。"
+    },
+    {
+      "id": 38,
+      "question": "关于TPM，以下说法正确的是",
+      "options": [
+        "A. 是一个temp（临时）芯片",
+        "B. 用来存储BitLocker的密钥",
+        "C. 用来存储机主信息",
+        "D. 用来存储厂家OEM信息"
+      ],
+      "correct": "B",
+      "explanation": "无"
+    },
+    {
+      "id": 39,
+      "question": "电脑出现“无法识别的电源适配器”提示常见原因是？",
+      "options": [
+        "A. 显卡温度过高",
+        "B. 内存不足",
+        "C. 适配器功率不足或接口不兼容",
+        "D. 屏幕分辨率过高"
+      ],
+      "correct": "C",
+      "explanation": "适配器功率或接口不匹配会导致无法识别。"
+    },
+    {
+      "id": 40,
+      "question": "Windows防火墙的主要作用是？",
+      "options": [
+        "A. 查杀病毒木马程序",
+        "B. 防止电脑温度过高起火",
+        "C. 防止电脑被点燃",
+        "D. 阻止未经授权的网络访问"
+      ],
+      "correct": "D",
+      "explanation": "防火墙的核心是阻止未经授权的网络访问，保护系统安全。"
+    },
+    {
+      "id": 41,
+      "question": "Windows命令：查看本机IP的是？",
+      "options": [
+        "A. netstat",
+        "B. ipconfig",
+        "C. ping",
+        "D. tracert"
+      ],
+      "correct": "B",
+      "explanation": "无"
+    },
+    {
+      "id": 42,
+      "question": "极客常用命令ipconfig /flushdns的作用是？",
+      "options": [
+        "A. 清除DNS缓存",
+        "B. 格式化硬盘",
+        "C. 关闭网络适配器",
+        "D. 提高网速"
+      ],
+      "correct": "A",
+      "explanation": "该命令用于清除DNS缓存，解决部分网络异常。"
+    },
+    {
+      "id": 43,
+      "question": "电脑启动后出现“CMOS checksum error”，通常是？",
+      "options": [
+        "A. USB接口损坏",
+        "B. 屏幕刷新率太高",
+        "C. 硬盘坏道",
+        "D. 主板电池电量耗尽"
+      ],
+      "correct": "D",
+      "explanation": "CMOS校验错误多因主板电池没电导致参数丢失。"
+    },
+    {
+      "id": 44,
+      "question": "Windows的“安全模式”主要用途是？",
+      "options": [
+        "A. 清理临时文件",
+        "B. 提高显卡性能",
+        "C. 降低硬盘温度",
+        "D. 以最少驱动启动系统用于排错"
+      ],
+      "correct": "D",
+      "explanation": "安全模式用最少驱动启动系统，是排错常用模式。"
+    },
+    {
+      "id": 45,
+      "question": "笔记本无法充电但能开机，最常见原因是？",
+      "options": [
+        "A. 充电芯片有问题",
+        "B. 电池损坏或接触不良",
+        "C. 屏幕分辨率低",
+        "D. 内存条松动"
+      ],
+      "correct": "B",
+      "explanation": "这种情况多是电池或充电接口问题，可尝试拔下电池单独供电测试。"
+    },
+    {
+      "id": 46,
+      "question": "Windows文件扩展名默认隐藏，想显示应在何处设置？",
+      "options": [
+        "A. 控制面板-网络",
+        "B. 文件资源管理器-查看-勾选“文件扩展名”",
+        "C. BIOS",
+        "D. 任务管理器"
+      ],
+      "correct": "B",
+      "explanation": "在资源管理器“查看”选项勾选“文件扩展名”即可显示。"
+    },
+    {
+      "id": 47,
+      "question": "关于扩展名，以下正确的是？",
+      "options": [
+        "A. 只是一个名字",
+        "B. 决定文件类型",
+        "C. 每个文件都有唯一的扩展名",
+        "D. MP3扩展名的文件一定是一首歌"
+      ],
+      "correct": "A",
+      "explanation": "无"
+    },
+    {
+      "id": 48,
+      "question": "如何跳过Windows的OOBE的在线账户激活",
+      "options": [
+        "A. sfc /scannow",
+        "B. oobe\\bypassnro",
+        "C. chkdsk",
+        "D. netsh"
+      ],
+      "correct": "B",
+      "explanation": "无"
+    },
+    {
+      "id": 49,
+      "question": "关于Android手机用户数据，正确的是？",
+      "options": [
+        "A. APP数据多数在内置存储中",
+        "B. 用户数据在data分区",
+        "C. 用户数据在system分区",
+        "D. 用户数据无法备份"
+      ],
+      "correct": "B",
+      "explanation": "无"
+    },
+    {
+      "id": 50,
+      "question": "C盘不够用，最佳方案是？",
+      "options": [
+        "A. 更换大容量硬盘作为C盘",
+        "B. 定时清理垃圾",
+        "C. 重装系统",
+        "D. 增加物理内存"
+      ],
+      "correct": "A",
+      "explanation": "无"
+    },
+    {
+      "id": 51,
+      "question": "如何保留C盘文件重装系统？",
+      "options": [
+        "A. 用ghost系统还原C盘，重装后C盘文件被移动到D盘",
+        "B. 用diskgenius删除并重建C盘分区表，重装后C盘旧文件被移动到Windows.old文件夹",
+        "C. 用官方ISO安装并且不格式化C盘，重装后旧文件被移动到Windows.old文件夹",
+        "D. 用官方ISO安装并格式化C盘，重装后旧文件被移动到Windows.old文件夹"
+      ],
+      "correct": "C",
+      "explanation": "无"
+    },
+    {
+      "id": 52,
+      "question": "iPhone“无锁机”指的是？",
+      "options": [
+        "A. 不受运营商限制可用任何SIM卡",
+        "B. 不需要密码",
+        "C. 不带保护壳",
+        "D. 没有指纹锁"
+      ],
+      "correct": "A",
+      "explanation": "无锁机可使用任意运营商的SIM卡。"
+    },
+    {
+      "id": 53,
+      "question": "如何恢复Office365？",
+      "options": [
+        "A. 去itellyou网站下载",
+        "B. 去office官网登陆账号并下载",
+        "C. Windows自带office365，无需下载",
+        "D. 使用WPS"
+      ],
+      "correct": "B",
+      "explanation": "无"
+    },
+    {
+      "id": 54,
+      "question": "如何删库跑路？",
+      "options": [
+        "A. sudo rm -rf /*",
+        "B. sudo rm -rf *",
+        "C. rm -rf /*",
+        "D. rm -rf *"
+      ],
+      "correct": "A",
+      "explanation": "无"
+    },
+    {
+      "id": 55,
+      "question": "Windows如何更改一个文件的默认打开方式",
+      "options": [
+        "A. 在360安全卫士中设置",
+        "B. 在Microsoft defender中设置",
+        "C. 在BIOS中设置",
+        "D. 右键文件-属性"
+      ],
+      "correct": "D",
+      "explanation": "无"
+    },
+    {
+      "id": 56,
+      "question": "笔记本合上盖子不休眠可在何处设置？",
+      "options": [
+        "A. 电源选项-选择关闭盖子时的操作",
+        "B. 任务管理器",
+        "C. 设备管理器",
+        "D. 磁盘管理"
+      ],
+      "correct": "A",
+      "explanation": "在电源选项中可以设置合盖时的行为。"
+    },
+    {
+      "id": 57,
+      "question": "wsl是什么？",
+      "options": [
+        "A. 适用于Linux 的Windows 子系统",
+        "B. 适用于Android 的Windows 子系统",
+        "C. 适用于iOS 的Windows 子系统",
+        "D. 适用于Mac 的Windows 子系统"
+      ],
+      "correct": "A",
+      "explanation": "无"
+    },
+    {
+      "id": 58,
+      "question": "Windows BitLocker功能的作用是？",
+      "options": [
+        "A. 降低温度",
+        "B. 提高CPU性能",
+        "C. 提高网速",
+        "D. 加密硬盘数据"
+      ],
+      "correct": "D",
+      "explanation": "BitLocker是Windows自带的磁盘加密功能。"
+    },
+    {
+      "id": 59,
+      "question": "以下哪个是著名的微软镜像下载站",
+      "options": [
+        "A. 迅雷",
+        "B. 电驴",
+        "C. 我告诉你",
+        "D. 中国电信"
+      ],
+      "correct": "C",
+      "explanation": "无"
+    },
+    {
+      "id": 60,
+      "question": "以下哪个文件系统对于跨系统支持最好，不考虑老系统",
+      "options": [
+        "A. NTFS",
+        "B. exFAT",
+        "C. APFS",
+        "D. EXT4"
+      ],
+      "correct": "B",
+      "explanation": "无"
+    }
+  ]
+}

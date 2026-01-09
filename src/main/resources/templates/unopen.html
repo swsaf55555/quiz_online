@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>答题未开放 - XXX在线招生考试</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+</head>
+<body>
+<header class="page-header">
+    <a href="https://qm.qq.com/q/P5422mPYeA" target="_blank" class="header-link">
+        <img src="/images/lab-logo.jpg" alt="实验室 Logo" class="lab-logo">
+        <div class="header-text">
+            <h1>XXX在线招生考试</h1>
+            <p>本平台由利刃网安攻防实验室研发</p>
+        </div>
+    </a>
+</header>
+
+
+<main class="main-container">
+    <div class="new-container">
+        <h2>答题未开放</h2>
+        <p>
+            <span>亲爱的</span><span class="username" th:text="${username}"></span><span>：</span>
+        </p>
+        <p>当前答题未开放或已结束！</p>
+        <p>本考试平台由<span style="color: #00ccaa">利刃网安攻防实验室</span>研发。</p>
+        <p>如对问卷有疑问，或对实验室感兴趣，欢迎进群交流！</p>
+        <p><a href="https://qm.qq.com/q/P5422mPYeA">点击加入实验室QQ群：xxxxxxxxx</a></p>
+        <div class="score-actions">
+            <form id="logoutForm" th:action="@{/logout}" method="post" style="display:none;">
+                <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+            </form>
+            <button onclick="location.reload()">刷新页面</button>
+            <button onclick="window.location.href='/ranking'">查看排行</button>
+            <button onclick="document.getElementById('logoutForm').submit(); return false;">退出登录</button>
+        </div>
+    </div>
+</main>
+<footer class="page-footer">
+    <p>本网站由利刃网安攻防实验室提供技术支持。</p>
+    <p>联系方式（QQ群）：xxxxxxxxx</p>
+    <p><a href="http://beian.miit.gov.cn/" target="_blank">京ICP备xxxxxxxxx号</a></p>
+</footer>
+</body>
+</html>

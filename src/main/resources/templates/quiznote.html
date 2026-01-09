@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>答题须知 - XXX在线招生考试</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+</head>
+<body>
+<header class="page-header">
+    <a href="https://qm.qq.com/q/P5422mPYeA" target="_blank" class="header-link">
+        <img src="/images/lab-logo.jpg" alt="实验室 Logo" class="lab-logo">
+        <div class="header-text">
+            <h1>XXX在线招生考试</h1>
+            <p>本平台由利刃网安攻防实验室研发</p>
+        </div>
+    </a>
+</header>
+
+
+<main class="main-container">
+    <form id="logoutForm" th:action="@{/logout}" method="post" style="display:none;">
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+    </form>
+    <form method="post" th:action="@{/quiz/start}">
+        <h2>答题须知</h2>
+        <span class="username" th:text="${username}"></span><span>，你好！</span>
+        <p>1. 本次答题共 20 道题，每题 1 分，满分 20 分。</p>
+        <p>2. 每个账号每道题只有一次答题机会。</p>
+        <p>3. 每题限时 30 秒，超时将自动判错。</p>
+        <p>4. 答题页面的倒计时仅供参考，最终以服务器计时为准。</p>
+        <p>5. 答题过程中请勿刷新或后退页面，否则会影响答进度！</p>
+        <p>6. 请勿多端同时登陆同时作答，否则会影响答题结果。</p>
+        <p>7. 请勿作弊，<span style="color: red">本平台采取多种反作弊手段，一旦被平台或监考人员认定为作弊，将取消本次答题成绩！</span></p>
+        <p>本考试平台由<span style="color: #00ccaa">利刃网安攻防实验室</span>研发。</p>
+        <p>如对问卷有疑问，或对实验室感兴趣，欢迎进群交流！</p>
+        <p><a href="https://qm.qq.com/q/P5422mPYeA">点击加入实验室QQ群：xxxxxxxxx</a></p>
+        <button type="submit">开始答题</button>
+        <button onclick="document.getElementById('logoutForm').submit(); return false;">退出登录</button>
+        <a href="/ranking">点击查看排行</a>
+    </form>
+
+</main>
+<footer class="page-footer">
+    <p>本网站由利刃网安攻防实验室提供技术支持。</p>
+    <p>联系方式（QQ群）：xxxxxxxxx</p>
+    <p><a href="http://beian.miit.gov.cn/" target="_blank">京ICP备xxxxxxxxx号</a></p>
+</footer>
+</body>
+</html>

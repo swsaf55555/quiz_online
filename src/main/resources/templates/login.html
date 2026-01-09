@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>登录 - XXX在线招生考试</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+</head>
+<body>
+<header class="page-header">
+    <a href="https://qm.qq.com/q/P5422mPYeA" target="_blank" class="header-link">
+        <img src="/images/lab-logo.jpg" alt="实验室 Logo" class="lab-logo">
+        <div class="header-text">
+            <h1>XXX在线招生考试</h1>
+            <p>本平台由利刃网安攻防实验室研发</p>
+        </div>
+    </a>
+</header>
+
+
+<main class="main-container">
+    <form method="post" action="/login">
+        <h2>登录</h2>
+        <div class="error-msg" th:if="${param.error != null}">
+            <span th:if="${param.error[0]=='busy'}">失败次数过多，请一分钟后再试</span>
+            <span th:if="${param.error[0]=='retry'}">用户名或密码错误</span>
+        </div>
+        <div class="registered-msg" th:if="${param.registered}">
+            注册成功
+        </div>
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+        <label>学号：
+            <input type="text" name="username" required>
+        </label>
+        <label>密码：
+            <input type="password" name="password" required>
+        </label>
+        <button type="submit">登录</button>
+        <a href="/register">还没有账号？去注册</a>
+    </form>
+</main>
+<footer class="page-footer">
+    <p>本网站由利刃网安攻防实验室提供技术支持。</p>
+    <p>联系方式（QQ群）：xxxxxxxxx</p>
+    <p><a href="http://beian.miit.gov.cn/" target="_blank">京ICP备xxxxxxxxx号</a></p>
+</footer>
+</body>
+
+</html>

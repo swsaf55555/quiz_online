@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>出现错误 - XXX在线招生考试</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+</head>
+<body>
+<header class="page-header">
+    <a href="https://qm.qq.com/q/P5422mPYeA" target="_blank" class="header-link">
+        <img src="/images/lab-logo.jpg" alt="实验室 Logo" class="lab-logo">
+        <div class="header-text">
+            <h1>XXX在线招生考试</h1>
+            <p>本平台由利刃网安攻防实验室研发</p>
+        </div>
+    </a>
+</header>
+
+
+<main class="main-container">
+    <div class="new-container">
+        <h2>出现了一些问题</h2>
+        <div class="error-details">
+            <p>由于某些原因，本次会话出现了一些小问题，但不要惊慌。</p>
+            <p>你可以点击下面的按钮返回登录界面（<span id="countdown">5</span>秒无操作自动返回）</p>
+        </div>
+        <form id="logoutForm" th:action="@{/logout}" method="post" style="display:none;">
+            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+        </form>
+        <button onclick="document.getElementById('logoutForm').submit(); return false;">返回主页</button>
+    </div>
+</main>
+<script>
+    let seconds = 5;
+    const countdownEl = document.getElementById('countdown');
+
+    const timer = setInterval(() => {
+        seconds--;
+        countdownEl.textContent = seconds;
+
+        if (seconds <= 0) {
+            clearInterval(timer);
+            document.getElementById('logoutForm').submit();
+            return false;
+        }
+    }, 1000);
+</script>
+<footer class="page-footer">
+    <p>本网站由利刃网安攻防实验室提供技术支持。</p>
+    <p>联系方式（QQ群）：xxxxxxxxx</p>
+    <p><a href="http://beian.miit.gov.cn/" target="_blank">京ICP备xxxxxxxxx号</a></p>
+</footer>
+</body>
+</html>

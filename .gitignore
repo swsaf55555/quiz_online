@@ -1,0 +1,13 @@
+.idea/
+*.iml
+
+/target/
+.mvn/wrapper/maven-wrapper.jar
+
+*.log
+
+.DS_Store
+Thumbs.db
+
+.env
+*.secret

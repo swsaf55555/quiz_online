@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>成绩排行 - XXX在线招生考试</title>
+    <link rel="stylesheet" href="/css/style_ranking.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+</head>
+<body class="ranking-page">
+<header class="page-header">
+    <a href="https://qm.qq.com/q/P5422mPYeA" target="_blank" class="header-link">
+        <img src="/images/lab-logo.jpg" alt="实验室 Logo" class="lab-logo">
+        <div class="header-text">
+            <h1>XXX在线招生考试</h1>
+            <p>本平台由利刃网安攻防实验室研发</p>
+        </div>
+    </a>
+</header>
+
+<main class="ranking-container">
+    <h2>成绩排行</h2>
+    <input type="text" id="searchInput" placeholder="输入姓名搜索..." style="padding:8px;margin:10px;width:200px;border:1px solid #00ffcc;border-radius:6px;background:#121212;color:#fff;">
+    <a href="/">点击这里返回主页</a>
+    <table id="rankingTable">
+        <thead>
+        <tr>
+            <th>名次</th>
+            <th>姓名</th>
+            <th th:if="${admin}">学号</th>
+            <th th:if="${admin}">手机号</th>
+            <th th:if="${admin}">意向部门</th>
+            <th>成绩</th>
+            <th>答题时间</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody id="rankingBody">
+        <tr th:each="r : ${rankingList}">
+            <td th:text="${r.rank}"></td>
+            <td th:text="${r.nickname}"></td>
+            <td th:if="${admin}" th:text="${r.username}"></td>
+            <td th:if="${admin}" th:text="${r.phonenumber}"></td>
+            <td th:if="${admin}" th:text="${r.part}"></td>
+            <td th:text="${r.score}"></td>
+            <td th:text="${#temporals.format(r.firstAnswerTime, 'yyyy-MM-dd HH:mm:ss')}"></td>
+            <td><a th:href="'/quiz/details?userid='+${r.userid}" target="_blank">查看</a></td>
+        </tr>
+        </tbody>
+    </table>
+    <p>答题成绩将作为获奖依据</p>
+    <div class="pagination" id="pagination"></div>
+</main>
+
+<script>
+    const rowsPerPage = 10;
+    const tbody = document.getElementById("rankingBody");
+    const pagination = document.getElementById("pagination");
+
+    let rows = tbody.querySelectorAll("tr");
+    const searchInput = document.getElementById("searchInput");
+    searchInput.addEventListener("input", function () {
+        const keyword = this.value.toLowerCase();
+        rows.forEach(row => {
+            const nameCell = row.querySelector("td:nth-child(2)");
+            if (nameCell && nameCell.textContent.toLowerCase().includes(keyword)) {
+                row.style.display = "";
+            } else {
+                row.style.display = "none";
+            }
+        });
+    });
+
+    let currentPage = 1;
+    let totalPages = Math.ceil(rows.length / rowsPerPage);
+
+    function showPage(page) {
+        currentPage = page;
+        rows.forEach((row, index) => {
+            row.style.display = (index >= (page - 1) * rowsPerPage && index < page * rowsPerPage) ? "" : "none";
+        });
+        renderPagination();
+    }
+
+    function renderPagination() {
+        pagination.innerHTML = "";
+        for (let i = 1; i <= totalPages; i++) {
+            let btn = document.createElement("button");
+            btn.innerText = i;
+            if (i === currentPage) {
+                btn.style.backgroundColor = "#00ccaa";
+            }
+            btn.onclick = () => showPage(i);
+            btn.className = "page-button"
+            pagination.appendChild(btn);
+        }
+    }
+
+    if (rows.length > 0) {
+        showPage(1);
+    }
+</script>
+<footer class="page-footer">
+    <p>本网站由利刃网安攻防实验室提供技术支持。</p>
+    <p>联系方式（QQ群）：xxxxxxxxx</p>
+    <p><a href="http://beian.miit.gov.cn/" target="_blank">京ICP备xxxxxxxxx号</a></p>
+</footer>
+</body>
+</html>
